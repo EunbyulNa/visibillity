@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>요소 숨기기</title>
+    <style media="screen">
+      div {
+        background-color: yellow;
+      }
+
+      p {
+        height: 100px;
+        background-color: pink;
+      }
+
+      .box1:hover p {
+        visibility: hidden;
+      }
+
+      .box2:hover p {
+        opacity: 0;
+      }
+
+      .box3:hover p {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+<h1>특정요소를 숨기기 위한 3가지 방법</h1>
+
+<div class="box1">
+<h3>Visivility</h3>
+<p>1 : 숨김처리, 원래 영역은 유지</p>
+</div>
+
+<div class="box2">
+<h3>Opacity</h3>
+<p>2 : 투명처리, 원래 영역은 유지</p>
+</div>
+
+<div class="box3">
+<h3>display</h3>
+<p>3 : 디스플레이 none, !원래 영역 사라짐!</p>
+</div>
+  </body>
+</html>
